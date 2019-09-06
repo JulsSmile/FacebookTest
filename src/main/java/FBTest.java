@@ -33,6 +33,6 @@ public class FBTest{
         driver.findElement(By.xpath("//*[@id=\"loginbutton\"]")).click();
 
         String errorMessage = driver.findElement(By.xpath("//*[@id='error_box']/div[2]")).getText();
-        Assert.assertEquals(errorMessage, "Ви робите спроби занадто часто. Будь ласка, спробуйте пізніше.vdf");
+        Assert.assertEquals(errorMessage, "Ви робите спроби занадто часто. Будь ласка, спробуйте пізніше.");
     }
 }
