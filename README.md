@@ -1,6 +1,6 @@
 # FacebookTest
 FacebookTest for Selenium
-Home Task.
+
 Negative test.
 
 Summary: During log in to Facebook with wrong credentials we are receiving error message.
