@@ -1,14 +1,11 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.http.util.Asserts;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
-import java.awt.*;
 
 public class FBTest{
     public static void main(String[] args) {
@@ -24,7 +21,7 @@ public class FBTest{
         search.sendKeys(Keys.ENTER);
         WebElement logIn = driver.findElement(By.xpath("//*[@id=\"rso\"]//a"));
         logIn.click();
-//        Assertion
+
         String URL = driver.getCurrentUrl();
         Assert.assertEquals(URL, "https://uk-ua.facebook.com/" );
 
