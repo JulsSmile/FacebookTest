@@ -24,7 +24,7 @@ public class FBTest {
         WebElement search = driver.findElement(By.name("q"));
         search.sendKeys(searchWord);
         search.sendKeys(Keys.ENTER);
-        WebElement logIn = driver.findElement(By.xpath("//*[@id=\"rso\"]//a"));
+        WebElement logIn = driver.findElement(By.xpath("//*[@id='rso']//a"));
         logIn.click();
 
         String URL = driver.getCurrentUrl();
